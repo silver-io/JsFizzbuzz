@@ -11,9 +11,15 @@ describe("FizzBuzz", function() {
       expect(fizzBuzz.divisibleByThree(3)).toBe(true);
     });
 
-    it('is divisible by five')
+    it('is divisible by five', function() {
+      expect(fizzBuzz.divisibleByFive(5)).toBe(true);
+    });
+
+    it('is divisible by fifteen', function() {
+      expect(fizzBuzz.divisibleByFifteen(15)).toBe(true);
+    });
 
   });
 
 
-})
+});
