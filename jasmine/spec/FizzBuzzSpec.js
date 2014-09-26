@@ -20,13 +20,21 @@ describe("FizzBuzz", function() {
     });
   });
 
-  describe('it is not divisible by', function(){
+  describe('it is not divisible by', function() {
 
     it('is not divisible by three', function(){
       expect(fizzBuzz.divisibleByThree(4)).toBe(false);
     });
 
-  });
+    it('is not divisible by five', function(){
+      expect(fizzBuzz.divisibleByFive(6)).toBe(false);
+    });
 
+    it('is not divisible by fifteen', function(){
+      expect(fizzBuzz.divisibleByFifteen(2)).toBe(false);
+
+    });
+
+  });
 
 });
