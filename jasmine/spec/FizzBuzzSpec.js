@@ -18,6 +18,13 @@ describe("FizzBuzz", function() {
     it('is divisible by fifteen', function() {
       expect(fizzBuzz.divisibleByFifteen(15)).toBe(true);
     });
+  });
+
+  describe('it is not divisible by', function(){
+
+    it('is not divisible by three', function(){
+      expect(fizzBuzz.divisibleByThree(4)).toBe(false);
+    });
 
   });
 
